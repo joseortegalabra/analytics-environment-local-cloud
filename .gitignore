@@ -35,3 +35,9 @@
 application_default_credentials.json
 **/application_default_credentials.json
 *application_default_credentials.json
+
+
+# trash folder
+.Trash-0
+**/.Trash-0
+*.Trash-0
