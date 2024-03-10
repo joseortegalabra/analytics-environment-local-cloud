@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  base:
+    image: analytics-data-science
+    container_name: analytics-environment-data-science-base
+    
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+    
+    volumes:
+      - ./src:/app/src
+      - ./test:/app/test
+      - ./application_default_credentials.json:/root/.config/gcloud/application_default_credentials.json
+      - ./requirements.txt:/app/requirements.txt
+
+      - ./.bash_history:/root/.bash_history
+      - ./.cache:/app/.cache
+    
+    environment:
+      GOOGLE_APPLICATION_CREDENTIALS: /root/.config/gcloud/application_default_credentials.json
+    
+    env_file:
+      - .env
+    
+    ports:
+      - "8888:8888"
