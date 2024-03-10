@@ -41,3 +41,8 @@ application_default_credentials.json
 .Trash-0
 **/.Trash-0
 *.Trash-0
+
+# jupyter notebooks checkpoints - not working
+.ipynb_checkpoints
+**/.ipynb_checkpoints
+*.ipynb_checkpoints

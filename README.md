@@ -185,6 +185,8 @@ Conceptos claves:
 
 ## DOCUMENTATION
 Interest links:
+- Juptyter lab in docker locally: https://medium.com/technology-hits/starting-with-python-jupyter-in-docker-7d3ead8940cb
+
 - Jupyter lab in a google cloud engine: https://medium.com/@squarefish75/host-your-jupyter-lab-using-docker-on-a-google-cloud-virtual-machine-513c3e6ec5f8
 
 - How to see a computer engine app in my browser: https://stackoverflow.com/questions/56362196/how-to-see-my-compute-engine-app-in-my-browser
