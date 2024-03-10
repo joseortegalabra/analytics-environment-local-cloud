@@ -9,7 +9,6 @@ WORKDIR /app
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 ENV PATH=$PATH:/root/google-cloud-sdk/bin
-#COPY start_jupyter.sh start_jupyter.sh
 
 
 CMD [ "jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root","--NotebookApp.token=''","--NotebookApp.password=''"]

@@ -10,12 +10,9 @@ services:
     
     volumes:
       - ./src:/app/src
-      - ./test:/app/test
+      - ./transversal:/app/transversal
       - ./application_default_credentials.json:/root/.config/gcloud/application_default_credentials.json
       - ./requirements.txt:/app/requirements.txt
-
-      - ./.bash_history:/root/.bash_history
-      - ./.cache:/app/.cache
     
     environment:
       GOOGLE_APPLICATION_CREDENTIALS: /root/.config/gcloud/application_default_credentials.json
