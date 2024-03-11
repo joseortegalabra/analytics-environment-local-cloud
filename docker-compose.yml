@@ -2,7 +2,7 @@ version: "3.8"
 services:
   base:
     image: analytics-data-science
-    container_name: analytics-environment-data-science-base
+    container_name: analytics-data-science-base
     
     build: 
       context: .
