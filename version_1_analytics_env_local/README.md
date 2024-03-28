@@ -69,9 +69,11 @@ cd D:\github-mi-repo\analytics-environment-local-cloud
 #### - Install docker container
 Run the command in a console  to create the docker container with the analytics environment
 
-`docker-compose up --build`
+`docker-compose up`
 
-Obs: note that running is command corresponding a running the file with the same name that contains the configuration of the docker application
+Obs: to me works good run only docker-compose up. But you can try running "docker-compose up --build" if you have problems
+Obs2: note that running is command corresponding a running the file with the same name that contains the configuration of the docker application
+**Obs3: It if the first time that you run the codes, internally docker create the image and then mounth the container.** Create the images take time, but already you have created the image, create the container is fast
 
 #### - Start Docker in your local machine
 Run the command in a console if the docker container is not running.
