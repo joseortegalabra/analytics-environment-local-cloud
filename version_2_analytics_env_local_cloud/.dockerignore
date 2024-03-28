@@ -2,6 +2,6 @@
 .cache
 .git
 **/*.parquet
-**/*.ipynb
+#**/*.ipynb
 **/*.xlsx
 **/*.csv
