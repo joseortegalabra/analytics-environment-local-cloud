@@ -22,8 +22,9 @@ Obs:
 
 -----------------------
 
-In this example nombre_de_la_imagen le asigne:
-analytics-env-ds
+In this example nombre_de_la_imagen le asigne: analytics-env-ds
+docker build -t analytics-env-ds .
 
-Y nombre del contenedor
-version_2_analytics_env_local_cloud
+
+Y nombre del contenedor: version_2_analytics_env_local_cloud
+docker run -d -p 8888:8888 --name version_2_analytics_env_local_cloud analytics-env-ds
